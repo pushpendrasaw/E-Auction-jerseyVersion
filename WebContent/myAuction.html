@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Auction</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<script src="js/AngularJs/jquery-min.js"></script>
+	<script src="js/myAuctions.js"></script>
+	<script src="js/polyfill.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+	<script src="js/AngularJs/angular.min.js" type="text/javascript"></script>
+	<script src="js/AngularJs/angular-route.min.js" type="text/javascript"></script>
+	
+	
+
+
+</head>
+<body data-ng-app='eAuctionApp'>
+	<div data-ng-include='"header.html"'></div>
+
+	<div class="container">
+		<div class="col-lg-12 col-md-4">
+			<h3>My Auction</h3>
+			<div id="get_my_auctions" ></div>
+			<!-- <div id="my_auctions" >
+				<table id='my_Auction_Table' class='table table-striped' data-ng-controller='myAuctionsTableController'>
+					<tbody>
+						<tr>
+							<th> Product </th>
+							<th> Description </th>
+							<th> Starting Bid </th>
+							<th> Last Bidding Date </th>
+							<th> Maximum Bid Price </th>
+							<th> Bidder </th>
+							<th> Edit </th>
+							<th> Remove </th>
+						</tr>
+					<tr data-ng-repeat="myauction in auctions">
+						<td class="product_Id hidden">{{myauction.product_Id}}</td>
+						<td class="product_Name">{{myauction.product_Name}}</td>
+						<td class="product_Disc">{{myauction.product_Disc}}</td>
+						<td class="initial_Bid">&#8377;{{myauction.initial_Bid}}</td>
+						<td class="last_Bid_Time ">{{myauction.last_Bid_Time}}</td>
+						<td class="Current_Bidding">{{myauction.maxBid}}</td>
+						<td class="Buyer">{{myauction.buyer_Id}}</td>
+						<td><a href="#" class="edit_Auction"><span class="glyphicon glyphicon-pencil"></span></a></td>
+						<td><a href="#" class="remove_Auction" ><span class="glyphicon glyphicon-remove"></span></a></td>
+						
+						<! <td><button class="viewItem btn btn-default" value="{{x.itemid}}" type="button">View</button></td> ->
+					</tr>					
+				</table> -->
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+  			<div class="col-md-4"></div>
+			  <div class="col-md-4"><div id="update_response"></div></div>
+			  <div class="col-md-4"></div>
+			</div>
+			
+			
+			<div class="col-lg-12 col-md-2">
+				<table class="table table-condensed" id="update_form" name="update_form">
+				  		<caption>
+				  			<h3>Updation</h3>
+				  		</caption> 
+				  		<tr>
+				  			<th></th>
+				  			<th> Product Name</th>
+				  			<th> Product Discription </th>
+				  			<th> Starting Bid </th>
+				  			<th> Last AUction Date </th>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				  <input type="hidden" id="form_product_Id" />
+				  			</td>
+				  			<td>
+				  				<h4 id="form_product_Name"></h4>
+							</td>
+							<td>
+							  	<textarea class="form-control" id="form_product_Disc"></textarea>
+							</td>
+							<td>
+								<input type="text" class="form-control" id="form_initial_Bid" value=""/>
+							</td>
+							<td>
+								<input type="datetime-local" class="form-control" id="form_last_Bid_Time" />
+							</td>
+							<td>
+				  				<input type="submit" class="btn btn-success" id="update_Submit"/>
+							</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+	
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+ 
+    <script src="js/script.js"></script>
+    <script src="js/AngularJs/bootstrap.min.js"></script>
+</body>
+</html>

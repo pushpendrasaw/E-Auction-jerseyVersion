@@ -1,0 +1,19 @@
+	
+	<div class="header">
+		<div class="container">
+			<div class="col-md-2 site-logo">
+				<h2><a href="index.html">E-Auction</a></h2>
+			</div>
+			<div class="col-md-6"></div>
+			<div class="col-md-4">
+				<div id="loginstatus" class="loginstatus"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="nav nav-tabs" id = "nav" data-ng-controller="NavController">
+			<li data-ng-repeat="x in navtabs" role="presentation"><a href="{{x.link}}" id="{{x.class}}">{{x.value}}</a></li>
+		</ul>		
+	</div>
+	
+	
